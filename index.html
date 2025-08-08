@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REBLUE - Interactive Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <div class="container">
+        <h1 class="title">REBLUE</h1>
+        <div class="subtitle-container">
+            <h2 class="subtitle">Welcome dear guest! Choose your adventure</h2>
+            <div class="sparkle">✨</div>
+        </div>
+        
+        <div class="button-container">
+            <div class="button-wrapper">
+                <button class="btn btn1" onclick="animateButton(this); window.location.href = 'box.html';">
+                    <span class="btn-text">Box in a Box</span>
+                    <span class="btn-emoji">📦</span>
+                </button>
+                <div class="tooltip">Endless nesting boxes!</div>
+            </div>
+            
+            <div class="button-wrapper">
+                <button class="btn btn2" onclick="animateButton(this); window.location.href = 'table.html';">
+                    <span class="btn-text">Savage Table</span>
+                    <span class="btn-emoji">🪑</span>
+                </button>
+                <div class="tooltip">Try to put things on this table!</div>
+            </div>
+        </div>
+        
+        <div class="floating-emojis">
+            <div class="emoji">✨</div>
+            <div class="emoji">🌟</div>
+            <div class="emoji">💫</div>
+        </div>
+    </div>
+    
+    <audio id="hoverSound" src="pop.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
